@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Abilash Balasubramanian's career growth dashboard — Staff Mobile Engineer / Mobile Architect roadmap." />
+  <meta name="theme-color" content="#0b1020" />
+  <title>Career OS — Abilash Balasubramanian</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#dashboard" aria-label="Career OS home">
+      <span class="brand-mark">AB</span>
+      <span><strong>Career OS</strong><small>Staff Mobile → Mobile Architect</small></span>
+    </a>
+    <nav class="topnav" aria-label="Main navigation">
+      <a href="#roadmap">Roadmap</a>
+      <a href="#skills">Skills</a>
+      <a href="#interview">Interview</a>
+      <a href="#applications">Applications</a>
+      <a href="#resources">Resources</a>
+    </nav>
+    <div class="header-actions">
+      <button class="ghost" id="themeToggle" type="button" aria-label="Toggle theme">☼</button>
+      <button class="ghost" id="exportBtn" type="button">Export</button>
+      <label class="ghost file-label" for="importInput">Import</label>
+      <input id="importInput" type="file" accept="application/json" hidden />
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="dashboard">
+      <div>
+        <p class="eyebrow">AB / CAREER GROWTH DASHBOARD</p>
+        <h1>Build toward <span>Staff Mobile Engineer</span><br/>and Mobile Architect.</h1>
+        <p class="hero-copy">One place for the roadmap, weekly learning, interview preparation, applications, certification progress, and the links you keep coming back to.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#today">Continue today →</a>
+          <a class="secondary" href="https://abilashblnair.github.io/profile/" target="_blank" rel="noreferrer">Open portfolio ↗</a>
+        </div>
+      </div>
+      <div class="hero-score card">
+        <div class="ring" id="overallRing"><span id="overallPercent">0%</span></div>
+        <div>
+          <p class="label">OVERALL ROADMAP</p>
+          <h3 id="overallMessage">Building momentum</h3>
+          <p class="muted" id="overallCount">0 of 0 roadmap items completed</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="metric-grid" aria-label="Progress summary">
+      <article class="metric card"><span>Current phase</span><strong id="currentPhase">Apply + foundation</strong><small>Start interviewing now</small></article>
+      <article class="metric card"><span>This week</span><strong><span id="weekDone">0</span>/<span id="weekTotal">0</span></strong><small>priority actions complete</small></article>
+      <article class="metric card"><span>Interview target</span><strong>Staff / Lead</strong><small>Mobile platform & architecture</small></article>
+      <article class="metric card"><span>Primary cert</span><strong>AWS SAA</strong><small>SAA-C03 · one cert, not five</small></article>
+    </section>
+
+    <section class="section" id="today">
+      <div class="section-head">
+        <div><p class="eyebrow">TODAY / THIS WEEK</p><h2>Do the work that moves the needle.</h2></div>
+        <button class="secondary small" id="addTaskBtn" type="button">+ Add task</button>
+      </div>
+      <div class="today-layout">
+        <div class="card task-panel">
+          <div id="weeklyTasks" class="task-list"></div>
+          <form id="taskForm" class="inline-form hidden">
+            <input id="taskInput" placeholder="Add a custom action…" maxlength="120" required />
+            <button class="primary small" type="submit">Add</button>
+            <button class="ghost small" type="button" id="cancelTaskBtn">Cancel</button>
+          </form>
+        </div>
+        <aside class="card focus-card">
+          <p class="label">WEEKLY SCORECARD</p>
+          <div class="score-row"><span>DSA problems</span><strong id="dsaScore">0 / 5</strong></div>
+          <div class="mini-progress"><i id="dsaBar"></i></div>
+          <div class="score-row"><span>System designs</span><strong id="designScore">0 / 2</strong></div>
+          <div class="mini-progress"><i id="designBar"></i></div>
+          <div class="score-row"><span>Applications</span><strong id="appScore">0 / 10</strong></div>
+          <div class="mini-progress"><i id="appBar"></i></div>
+          <p class="tip">Rule: learning and applications run in parallel. Never wait to “finish learning” before interviewing.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="roadmap">
+      <div class="section-head">
+        <div><p class="eyebrow">6–9 MONTH PLAN</p><h2>Your roadmap.</h2></div>
+        <p class="section-note">Oct 2026 → Jun 2027 · click items as you complete them.</p>
+      </div>
+      <div id="roadmapGrid" class="roadmap-grid"></div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-head">
+        <div><p class="eyebrow">SKILL TRACKS</p><h2>Depth over random frameworks.</h2></div>
+        <p class="section-note">Each track has a clear “done looks like” outcome.</p>
+      </div>
+      <div id="skillGrid" class="skill-grid"></div>
+    </section>
+
+    <section class="section" id="certification">
+      <div class="cert-card card">
+        <div>
+          <p class="eyebrow">CERTIFICATION</p>
+          <h2>AWS Solutions Architect – Associate</h2>
+          <p>Use certification to close the cloud/architecture gap — not as a badge collection exercise. Focus on secure, resilient, high-performing and cost-optimized architectures.</p>
+          <div class="chip-row"><span>SAA-C03</span><span>AWS Well-Architected</span><span>Architecture depth</span></div>
+        </div>
+        <div class="cert-action">
+          <label for="certProgress">Study progress <strong id="certProgressLabel">0%</strong></label>
+          <input id="certProgress" type="range" min="0" max="100" step="5" value="0" />
+          <a class="primary" href="https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html" target="_blank" rel="noreferrer">Official exam guide ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="interview">
+      <div class="section-head">
+        <div><p class="eyebrow">INTERVIEW OS</p><h2>Prepare like a Staff engineer.</h2></div>
+        <p class="section-note">DSA + mobile system design + leadership stories.</p>
+      </div>
+      <div class="interview-grid">
+        <article class="card">
+          <div class="card-title"><h3>DSA topics</h3><span id="dsaTopicCount" class="counter"></span></div>
+          <div id="dsaTopics" class="compact-checks"></div>
+        </article>
+        <article class="card">
+          <div class="card-title"><h3>Mobile system design</h3><span id="systemTopicCount" class="counter"></span></div>
+          <div id="systemTopics" class="compact-checks"></div>
+        </article>
+        <article class="card">
+          <div class="card-title"><h3>Leadership stories</h3><span id="storyTopicCount" class="counter"></span></div>
+          <div id="storyTopics" class="compact-checks"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="applications">
+      <div class="section-head">
+        <div><p class="eyebrow">JOB PIPELINE</p><h2>Apply while you learn.</h2></div>
+        <button class="secondary small" id="addApplicationBtn" type="button">+ Track application</button>
+      </div>
+      <form id="applicationForm" class="card application-form hidden">
+        <input id="companyInput" placeholder="Company" required />
+        <input id="roleInput" placeholder="Role (e.g. Staff Mobile Engineer)" required />
+        <select id="statusInput"><option>Applied</option><option>Recruiter</option><option>Screening</option><option>Technical</option><option>Onsite</option><option>Offer</option><option>Closed</option></select>
+        <input id="linkInput" type="url" placeholder="Job URL (optional)" />
+        <button class="primary small" type="submit">Save</button>
+        <button class="ghost small" type="button" id="cancelApplicationBtn">Cancel</button>
+      </form>
+      <div class="card table-wrap">
+        <table>
+          <thead><tr><th>Company</th><th>Role</th><th>Status</th><th>Date</th><th>Link</th><th></th></tr></thead>
+          <tbody id="applicationTable"></tbody>
+        </table>
+        <div id="emptyApplications" class="empty">No applications tracked yet. Target: 10 focused applications/referrals per week.</div>
+      </div>
+    </section>
+
+    <section class="section" id="resources">
+      <div class="section-head resources-head">
+        <div><p class="eyebrow">RESOURCE LIBRARY</p><h2>Everything worth reopening.</h2></div>
+        <input id="resourceSearch" class="search" type="search" placeholder="Search links…" aria-label="Search resources" />
+      </div>
+      <div class="filter-row" id="resourceFilters"></div>
+      <div id="resourceGrid" class="resource-grid"></div>
+    </section>
+
+    <section class="section" id="notes">
+      <div class="section-head"><div><p class="eyebrow">WORK LOG</p><h2>Keep the evidence.</h2></div><p class="section-note">Save wins, interview feedback, architecture decisions and what to revise.</p></div>
+      <div class="notes-grid">
+        <div class="card">
+          <label class="label" for="weeklyNotes">NOTES / LEARNINGS</label>
+          <textarea id="weeklyNotes" rows="10" placeholder="Example: Learned how JSI avoids serialization across the old RN bridge…"></textarea>
+          <small class="autosave">Autosaved locally in this browser.</small>
+        </div>
+        <div class="card backup-card">
+          <p class="label">DON'T LOSE YOUR PROGRESS</p>
+          <h3>Export a backup regularly.</h3>
+          <p>Browser storage is convenient but can disappear if site data is cleared or you switch devices. Export the JSON and keep it in Drive/GitHub/private storage.</p>
+          <button class="primary" id="exportBtn2" type="button">Export progress backup</button>
+          <button class="danger-link" id="resetBtn" type="button">Reset dashboard data</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Career OS</strong> · Built for Abilash Balasubramanian</div>
+    <div class="footer-links">
+      <a href="https://abilashblnair.github.io/profile/" target="_blank" rel="noreferrer">Portfolio</a>
+      <a href="https://github.com/abilashblnair" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/abilash-balasubramanian-629918b4/" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script><script src="v2.js"></script>
+</body>
+</html>
+
