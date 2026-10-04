@@ -54,3 +54,10 @@ Application review counts use creation dates added by V2; V1 applications remain
 
 ## Verification
 Browser verification covered session logging/deletion support, reload persistence, kanban-to-table updates, saved reviews, V1 backup migration, rejection of malformed imports, unsafe URL filtering, week boundaries, and a 390px mobile viewport. Run `node verify.cjs` if the bundled Playwright runtime and Microsoft Edge are available.
+
+## Q&A and repeatable assessments
+Open **Q&A + assessments** from the dashboard or visit `#learning`. The library contains 64 original Q&As across iOS, Android, React Native, mobile architecture/security, AWS/cloud, AI, Staff leadership, and DSA. Search and filter by track and latest recall rating.
+
+Start a full-track/full-library assessment, a shuffled ten-question refresh, or a previously missed/partial set. Write or say your answer before revealing the model answer and suggested rubric, then self-score 0/1/2. This is a recall exercise, not automatic grading or an exhaustive syllabus. Completed attempts retain written answers; unfinished attempts are discarded on reload or navigation away. You can retake any set without limits.
+
+Assessment history and latest ratings are stored locally and included in Export/Import. Source links provide further reading; review SDK-specific details against current official docs. Study content is authored guidance, not copied certification questions. Deploy `learning-bank.js` and `learning.js` alongside the original files.
