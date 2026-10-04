@@ -58,9 +58,9 @@ Browser verification covered session logging/deletion support, reload persistenc
 ## Q&A and repeatable assessments
 Open **Q&A + assessments** from the dashboard or visit `#learning`. The library contains 400 Q&As in eight 50-question platform/area banks across iOS, Android, React Native, mobile architecture/security, AWS/cloud, AI, Staff leadership, and DSA. Search and filter by track and latest recall rating.
 
-Start a full-track/full-library assessment, a shuffled ten-question refresh, or a previously missed/partial set. Write or say your answer before revealing the model answer and suggested rubric, then self-score 0/1/2. This is a recall exercise, not automatic grading or an exhaustive syllabus. Completed attempts retain written answers; unfinished attempts are discarded on reload or navigation away. You can retake any set without limits.
+Start a full-platform/full-library quiz, a shuffled ten-question refresh, or a previously missed set. Select one of three answers and check it: correct = 1 mark, wrong or skipped = 0, with no negative marking. Every one of the 400 questions has authored choices and an automatic answer key. Feedback explains the model answer; completed attempts retain selected answers. Older self-scored attempts remain on their original 0/1/2 scale. Unfinished quizzes are discarded on reload or navigation away. Retake any set without limits.
 
-Assessment history and latest ratings are stored locally and included in Export/Import. Source links provide further reading; review SDK-specific details against current official docs. Study content is authored guidance, not copied certification questions. Deploy `learning-bank.js`, `learning-expanded.js`, `learning.js`, and `learning-platforms.js` alongside the original files.
+Assessment history and latest ratings are stored locally and included in Export/Import. Source links provide further reading; review SDK-specific details against current official docs. Study content is authored guidance, not copied certification questions. Deploy `learning-bank.js`, `learning-expanded.js`, `learning.js`, and `learning-platforms.js`, `quiz-bank.js`, `learning-quiz.js`, and `visual-guides.js` alongside the original files.
 
 
 ## Dedicated platform lists
@@ -71,3 +71,12 @@ Direct routes: `#learning/ios`, `#learning/android`, `#learning/rn`, `#learning/
 Older interview collections informed topic selection. Answers were rewritten to distinguish configuration changes from process death, storage from encryption, framework contracts from performance guarantees, and installed native code from OTA bundles. Personal messages and job descriptions are excluded. Existing question IDs remain unchanged, preserving previous ratings and history.
 
 Browser validation covered all eight lists and 50-question assessment scopes, topic/search filters, expand/collapse, missed-question retakes, saved history, export/import normalization, deep-link restoration, and a 390px mobile layout.
+
+
+## Visual learning and platform updates
+- `#visuals`: eight SVG architecture/branching diagrams for offline-first, iOS, Android, Fabric, token refresh, backend/cloud, RAG, and release safety.
+- DSA: 56 selectable guides covering all 50 library topics plus six sorting algorithms. Each guide includes an explicit learning sequence, complexity, worked example, and pseudocode. Learning-sequence arrows show stages; loop and branch logic is explained in the pseudocode.
+- Ten interactive worked traces cover binary search, Two Sum, distinct windows, bubble sort, prefix sums, coin change, BFS, bracket stacks, merging, and Dijkstra. Use Next/Back to see values change.
+- `#updates`: official-source release snapshot checked 4 October 2026: iOS 27.0.1, Android 17/API 37 (stable major; device build varies), and React Native 0.87.1. Cards separate stable from preview status and link to release notes, changes, and study checklists. This snapshot does not automatically refresh.
+
+Browser verification covered all 400 quiz keys, correct/wrong/skipped scoring, mistaken-question retakes, mixed legacy/new history, malformed backup rejection, all eight diagrams, all 56 guides, all ten traces, and mobile/light-theme layout. SVGs and guides are native site code and require no external visualization library.
