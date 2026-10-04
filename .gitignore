@@ -1,0 +1,7 @@
+# Local content review and browser verification artifacts
+shared-*
+*shares.cjs
+verify-*.cjs
+check-bank.cjs
+*-preview.png
+learning-mobile.png

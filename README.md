@@ -56,8 +56,18 @@ Application review counts use creation dates added by V2; V1 applications remain
 Browser verification covered session logging/deletion support, reload persistence, kanban-to-table updates, saved reviews, V1 backup migration, rejection of malformed imports, unsafe URL filtering, week boundaries, and a 390px mobile viewport. Run `node verify.cjs` if the bundled Playwright runtime and Microsoft Edge are available.
 
 ## Q&A and repeatable assessments
-Open **Q&A + assessments** from the dashboard or visit `#learning`. The library contains 64 original Q&As across iOS, Android, React Native, mobile architecture/security, AWS/cloud, AI, Staff leadership, and DSA. Search and filter by track and latest recall rating.
+Open **Q&A + assessments** from the dashboard or visit `#learning`. The library contains 400 Q&As in eight 50-question platform/area banks across iOS, Android, React Native, mobile architecture/security, AWS/cloud, AI, Staff leadership, and DSA. Search and filter by track and latest recall rating.
 
 Start a full-track/full-library assessment, a shuffled ten-question refresh, or a previously missed/partial set. Write or say your answer before revealing the model answer and suggested rubric, then self-score 0/1/2. This is a recall exercise, not automatic grading or an exhaustive syllabus. Completed attempts retain written answers; unfinished attempts are discarded on reload or navigation away. You can retake any set without limits.
 
-Assessment history and latest ratings are stored locally and included in Export/Import. Source links provide further reading; review SDK-specific details against current official docs. Study content is authored guidance, not copied certification questions. Deploy `learning-bank.js` and `learning.js` alongside the original files.
+Assessment history and latest ratings are stored locally and included in Export/Import. Source links provide further reading; review SDK-specific details against current official docs. Study content is authored guidance, not copied certification questions. Deploy `learning-bank.js`, `learning-expanded.js`, `learning.js`, and `learning-platforms.js` alongside the original files.
+
+
+## Dedicated platform lists
+The learning catalog has **50 Q&As each** for iOS, Android, React Native, mobile architecture/security, AWS/cloud, AI engineering, Staff leadership, and DSA. Platform cards open each full list. Topic groups narrow both lists and assessment scope; search and recall-rating filters affect library display only. Use Show full platform list to clear filters. Expand/collapse controls apply to displayed answers.
+
+Direct routes: `#learning/ios`, `#learning/android`, `#learning/rn`, `#learning/architecture`, `#learning/cloud`, `#learning/ai`, `#learning/staff`, and `#learning/dsa`. The default is iOS; All tracks offers a mixed 400-question view.
+
+Older interview collections informed topic selection. Answers were rewritten to distinguish configuration changes from process death, storage from encryption, framework contracts from performance guarantees, and installed native code from OTA bundles. Personal messages and job descriptions are excluded. Existing question IDs remain unchanged, preserving previous ratings and history.
+
+Browser validation covered all eight lists and 50-question assessment scopes, topic/search filters, expand/collapse, missed-question retakes, saved history, export/import normalization, deep-link restoration, and a 390px mobile layout.
