@@ -89,3 +89,10 @@ The additions cover architecture, notifications, MQTT, BLE, WebSockets, auth, ac
 `#mobile-sdks` provides 24 platform/framework/SDK options with use cases, adoption/upgrade checks, maintainer links and related flows. These are curated learning suggestions, not an exhaustive SDK catalog or a live package-version feed. Source and migration links support current project-specific checks. A learning order and generic/iOS/Android/RN upgrade flows connect version changes to device and data validation.
 
 Browser validation covered 51 valid SVG graphs, all explanation controls, search including acronym matching and empty states, area/platform filtering, direct links across reload, a 390px viewport, theme switching and existing one-mark assessments. Existing saved data and the 400-question assessment bank are unchanged.
+
+## Concrete Q&A examples
+Deploy `learning-examples.js` after the expanded bank and before `learning.js`. All 400 questions have original practical examples, keyed to stable question IDs via validated track/topic matches. Nineteen examples include expandable illustrative code, pseudocode, or worked sketches. Code snippets are contextual learning aids rather than complete applications.
+
+Examples appear inside expanded library answers, checked quiz feedback, and completed quiz reviews. They remain hidden in unanswered quizzes and retakes. Library search includes example text. These additions do not change question IDs, answer keys, scoring, or the stored backup schema.
+
+Browser checks cover all eight 50-question lists, complete example coverage, snippet rendering, example-text search, feedback timing, retakes, scoring, reload history, and a 390px viewport with themes.
