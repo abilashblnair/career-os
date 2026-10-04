@@ -74,9 +74,18 @@ Browser validation covered all eight lists and 50-question assessment scopes, to
 
 
 ## Visual learning and platform updates
-- `#visuals`: eight SVG architecture/branching diagrams for offline-first, iOS, Android, Fabric, token refresh, backend/cloud, RAG, and release safety.
+- `#visuals`: 51 SVG mobile/system diagrams for offline-first, iOS, Android, Fabric, token refresh, backend/cloud, RAG, and release safety.
 - DSA: 56 selectable guides covering all 50 library topics plus six sorting algorithms. Each guide includes an explicit learning sequence, complexity, worked example, and pseudocode. Learning-sequence arrows show stages; loop and branch logic is explained in the pseudocode.
 - Ten interactive worked traces cover binary search, Two Sum, distinct windows, bubble sort, prefix sums, coin change, BFS, bracket stacks, merging, and Dijkstra. Use Next/Back to see values change.
 - `#updates`: official-source release snapshot checked 4 October 2026: iOS 27.0.1, Android 17/API 37 (stable major; device build varies), and React Native 0.87.1. Cards separate stable from preview status and link to release notes, changes, and study checklists. This snapshot does not automatically refresh.
 
-Browser verification covered all 400 quiz keys, correct/wrong/skipped scoring, mistaken-question retakes, mixed legacy/new history, malformed backup rejection, all eight diagrams, all 56 guides, all ten traces, and mobile/light-theme layout. SVGs and guides are native site code and require no external visualization library.
+Browser verification covered all 400 quiz keys, correct/wrong/skipped scoring, mistaken-question retakes, mixed legacy/new history, malformed backup rejection, all original eight diagrams, all 56 guides, all ten traces, and mobile/light-theme layout. SVGs and guides are native site code and require no external visualization library.
+
+## Mobile flows and SDK guide
+Deploy `mobile-flows.js` after `visual-guides.js`. The visual library now includes 51 diagrams: eight original system designs and 43 new mobile journeys. Search by concept, filter by area, step through explanations, and use direct links such as `#visuals/mvvm`, `#visuals/viper`, `#visuals/push-apns`, `#visuals/mqtt-connect`, and `#visuals/ble-central`.
+
+The additions cover architecture, notifications, MQTT, BLE, WebSockets, auth, account switching, deep links, permissions, paging, optimistic edits, uploads, image caching, subscriptions, location, concurrency, persistence, background work, native modules, camera, diagnostics, flags and release/SDK upgrades. Each new flow includes common mistakes and a practical exercise. Explicit branches cover permission, BLE service discovery, verified purchases, conflicts and SDK validation. Other charts show main-path learning journeys; notes explain platform limits and alternatives.
+
+`#mobile-sdks` provides 24 platform/framework/SDK options with use cases, adoption/upgrade checks, maintainer links and related flows. These are curated learning suggestions, not an exhaustive SDK catalog or a live package-version feed. Source and migration links support current project-specific checks. A learning order and generic/iOS/Android/RN upgrade flows connect version changes to device and data validation.
+
+Browser validation covered 51 valid SVG graphs, all explanation controls, search including acronym matching and empty states, area/platform filtering, direct links across reload, a 390px viewport, theme switching and existing one-mark assessments. Existing saved data and the 400-question assessment bank are unchanged.
